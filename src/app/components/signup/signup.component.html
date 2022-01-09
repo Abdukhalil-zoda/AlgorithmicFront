@@ -1,0 +1,50 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+    <mat-card fxLayout="column" fxFlex="30">
+        <mat-toolbar fxLayoutAlign="center center" color="primary">Signup</mat-toolbar>
+        <div fxLayoutAlign="strech" fxLayout="column" class="login-form">
+            <mat-form-field>
+                <mat-label>Email</mat-label>
+                <input type="email" matInput placeholder="aza.aliyev@mail.ru">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Username</mat-label>
+                <input matInput placeholder="AzaAliyev">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Fullname</mat-label>
+                <input matInput placeholder="Aziz Aliyev">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Password</mat-label>
+                <input type="password" matInput>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label #matlab>Confirm</mat-label>
+                <input type="password" matInput>
+            </mat-form-field>
+
+            <div fxFill fxLayout="row" fxLayoutAlign="space-between center">
+                <a routerLink="/" routerLinkActive="activebutton">
+                Home
+              </a>
+                <button color="primary" mat-raised-button>Signup</button>
+            </div>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="center center">
+            <div fxFlex="40" class="div-hr"></div>
+            <mat-label fxFlexAlign="center">&nbsp;Or&nbsp;</mat-label>
+            <div fxFlex="40" class="div-hr"></div>
+        </div>
+
+
+
+        <div class="login-form">
+            <button routerLink="/login" routerLinkActive="activebutton" fxFill color="primary" mat-raised-button>Login</button>
+        </div>
+
+
+
+    </mat-card>
+
+
+</div>

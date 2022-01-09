@@ -1,0 +1,38 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+    <mat-card fxLayout="column" fxFlex="30">
+        <mat-toolbar fxLayoutAlign="center center" color="primary">Login</mat-toolbar>
+        <div fxLayoutAlign="strech" fxLayout="column" class="login-form">
+            <mat-form-field>
+                <mat-label>Email or User name</mat-label>
+                <input matInput [(ngModel)]="data.user" placeholder="Aziz Aliyev">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Password</mat-label>
+                <input matInput [(ngModel)]="data.pass" placeholder="931234567 ">
+            </mat-form-field>
+
+            <div fxFill fxLayout="row" fxLayoutAlign="space-between center">
+                <a routerLink="/password-reset" routerLinkActive="activebutton">
+                  Reset password
+                </a>
+                <button color="primary" mat-raised-button>Login</button>
+            </div>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="center center">
+            <div fxFlex="40" class="div-hr"></div>
+            <mat-label fxFlexAlign="center">&nbsp;Or&nbsp;</mat-label>
+            <div fxFlex="40" class="div-hr"></div>
+        </div>
+
+
+
+        <div class="login-form">
+            <button routerLink="/signup" routerLinkActive="activebutton" fxFill color="primary" mat-raised-button>Signup</button>
+        </div>
+
+
+
+    </mat-card>
+
+
+</div>
