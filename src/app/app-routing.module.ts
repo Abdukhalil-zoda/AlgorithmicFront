@@ -9,7 +9,11 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'password-reset', component: PasswordResetComponent },
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  {
+    path: '',
+    loadChildren: () =>
+      import('./modules/main/main.module').then(m => m.MainModule),
+  },
   {
     path: 'admin',
     loadChildren: () =>

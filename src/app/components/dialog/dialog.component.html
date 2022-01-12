@@ -1,0 +1,9 @@
+<div fxLayoutAlign="center center" fxFlexFill fxLayout="column">
+    <h1 fxLayoutAlign="center center">
+        <mat-icon>{{data.icon}}</mat-icon>{{data.title}}
+    </h1>
+    <p fxFlexAlign="start">
+        {{data.message}}
+    </p>
+    <button mat-button (click)="onNoClick()">Ok</button>
+</div>

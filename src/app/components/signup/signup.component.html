@@ -4,30 +4,30 @@
         <div fxLayoutAlign="strech" fxLayout="column" class="login-form">
             <mat-form-field>
                 <mat-label>Email</mat-label>
-                <input type="email" matInput placeholder="aza.aliyev@mail.ru">
+                <input type="email" [(ngModel)]="data.email" matInput placeholder="aza.aliyev@mail.ru">
             </mat-form-field>
             <mat-form-field>
                 <mat-label>Username</mat-label>
-                <input matInput placeholder="AzaAliyev">
+                <input matInput [(ngModel)]="data.user" placeholder="AzaAliyev">
             </mat-form-field>
             <mat-form-field>
                 <mat-label>Fullname</mat-label>
-                <input matInput placeholder="Aziz Aliyev">
+                <input matInput [(ngModel)]="data.fullName" placeholder="Aziz Aliyev">
             </mat-form-field>
             <mat-form-field>
                 <mat-label>Password</mat-label>
-                <input type="password" matInput>
+                <input type="password" [(ngModel)]="data.pass" matInput>
             </mat-form-field>
             <mat-form-field>
-                <mat-label #matlab>Confirm</mat-label>
-                <input type="password" matInput>
+                <mat-label>Confirm</mat-label>
+                <input type="password" [(ngModel)]="data.conf" matInput>
             </mat-form-field>
 
             <div fxFill fxLayout="row" fxLayoutAlign="space-between center">
                 <a routerLink="/" routerLinkActive="activebutton">
                 Home
               </a>
-                <button color="primary" mat-raised-button>Signup</button>
+                <button color="primary" (click)="signup()" mat-raised-button>Signup</button>
             </div>
         </div>
         <div fxLayout="row" fxLayoutAlign="center center">
