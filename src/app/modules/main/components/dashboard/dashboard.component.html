@@ -1,3 +1,16 @@
-<app-header></app-header>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<mat-drawer-container class="example-container">
+    <mat-drawer #drawer>I'm a drawer</mat-drawer>
+    <mat-drawer-content fxFill fxLayout="row">
+        <div fxFill fxLayout="row" fxLayoutAlign="space-between center">
+            <button mat-icon-button color="primary" (click)="drawer.toggle()">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <a routerLink="/" routerLinkActive="activebutton">
+                &#123;A&#125;lgorithmic
+            </a>
+        </div>
+        <div fxFill class="hr-div"></div>
+
+
+    </mat-drawer-content>
+</mat-drawer-container>
